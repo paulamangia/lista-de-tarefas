@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 Minha Lista de Tarefas</h1>
+      <p class="subtitle">Organize suas atividades diárias com facilidade</p>
+    </header>
+
+    <!-- Formulário para adicionar nova tarefa -->
+    <form id="todo-form">
+      <input 
+        type="text" 
+        id="todo-input" 
+        placeholder="O que você precisa fazer hoje?" 
+        autocomplete="off"
+        required
+      >
+      <button type="submit" id="add-btn">Adicionar</button>
+    </form>
+
+    <!-- Contador e resumo -->
+    <div class="summary">
+      <span id="counter">0 tarefas pendentes</span>
+    </div>
+
+    <!-- Lista onde os itens serão inseridos via JavaScript -->
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
